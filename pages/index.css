@@ -328,6 +328,17 @@ button:hover{
   padding: 25px 0 25px 0;
 }
 
+.footer__image-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__image{
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 60px;
+}
+
 .reveal{
   opacity: 0;
   transition: opacity 2s ease-out;
