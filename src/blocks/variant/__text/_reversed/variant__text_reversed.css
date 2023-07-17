@@ -1,0 +1,7 @@
+.variant__text_reversed{
+  padding: 0;
+  margin: 0 0 25px 0;
+  max-width: 550px;
+  text-align: left;
+  font-style: italic;
+}

@@ -1,3 +1,5 @@
+import './index.css'
+
 function reveal() {
   const reveals = document.querySelectorAll(".reveal");
   for (let i = 0; i < reveals.length; i++) {

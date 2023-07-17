@@ -1,0 +1,6 @@
+.gallery__image{
+  width: 350px;
+  position: relative;
+  transition: transform 1s ease-out;
+  z-index: 5;
+}

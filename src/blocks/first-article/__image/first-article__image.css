@@ -1,0 +1,6 @@
+.first-article__image{
+  width: 300px;
+  grid-column: 1;
+  grid-row: 1;
+  border-radius: 15px;
+}

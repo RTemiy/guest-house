@@ -1,0 +1,6 @@
+.lead{
+  background-image: url("../../images/big_house.jpg");
+  height: 600px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}

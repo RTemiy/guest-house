@@ -1,0 +1,76 @@
+@import url(../vendor/normalize.css);
+@import url(../vendor/fonts/fonts.css);
+
+@import url(../blocks/root/root.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__text/header__text.css);
+@import url(../blocks/header/__icon/header__icon.css);
+@import url(../blocks/header/__button/header__button.css);
+@import url(../blocks/header/__button-text/header__button-text.css);
+@import url(../blocks/header/__menu/header__menu.css);
+@import url(../blocks/header/__menu-button/header__menu-button.css);
+
+@import url(../blocks/content/content.css);
+
+@import url(../blocks/first-article/first-article.css);
+@import url(../blocks/first-article/__image/first-article__image.css);
+@import url(../blocks/first-article/__image-container/first-article__image-container.css);
+@import url(../blocks/first-article/__image-text/first-article__image-text.css);
+@import url(../blocks/first-article/__title/first-article__title.css);
+@import url(../blocks/variant/variant.css);
+@import url(../blocks/variant/_reversed/variant_reversed.css);
+@import url(../blocks/variant/__image/variant__image.css);
+@import url(../blocks/variant/__container/variant__container.css);
+@import url(../blocks/variant/__container/_reversed/variant__container_reversed.css);
+@import url(../blocks/variant/__title/variant__title.css);
+@import url(../blocks/variant/__text/variant__text.css);
+@import url(../blocks/variant/__text/_reversed/variant__text_reversed.css);
+@import url(../blocks/variant/__link/variant__link.css);
+@import url(../blocks/gallery/gallery.css);
+@import url(../blocks/gallery/__title/gallery__title.css);
+@import url(../blocks/gallery/__container/gallery__container.css);
+@import url(../blocks/gallery/__image/gallery__image.css);
+@import url(../blocks/lead/lead.css);
+@import url(../blocks/lead/__title/lead__title.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__image-container/footer__image-container.css);
+@import url(../blocks/footer/__image/footer__image.css);
+@import url(../blocks/footer/__image-link/footer__image-link.css);
+@import url(../blocks/reveal/reveal.css);
+
+a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 0;
+  margin: 0;
+  transition: opacity 1s ease-out;
+  cursor: pointer;
+}
+
+a:hover{
+  opacity: 0.6;
+}
+
+li{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li:first-child{
+  font-weight: 800;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+}
+
+button{
+  cursor: pointer;
+  transition: opacity 1s ease-out;
+}
+
+button:hover{
+  opacity: 0.6;
+}

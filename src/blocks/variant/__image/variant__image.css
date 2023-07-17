@@ -1,0 +1,6 @@
+.variant__image{
+  width: 512px;
+  grid-column: 1;
+  grid-row: 1/-1;
+  border-radius: 15px;
+}
