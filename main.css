@@ -12,7 +12,7 @@
 .first-article{align-content:center;align-items:center;color:#000;display:grid;gap:15px 15px;grid-template-columns:repeat(3,min-content);grid-template-rows:repeat(4,min-content);height:780px;justify-content:center;justify-items:center;padding-top:80px}
 .first-article__image{border-radius:15px;grid-column:1;grid-row:1;width:300px}
 .first-article__image-container{border:0;border-radius:15px;display:grid;padding:0;transition:all .2s ease-out}.first-article__image-container:hover{box-shadow:0 0 15px #000;opacity:.8;transform:scale(1.05)}.first-article__image-container:hover .first-article__image-text{background:#006400;color:#fff}
-.first-article__image-text{align-self:end;background-color:#fff;box-sizing:border-box;color:#000;display:block;font-size:25px;font-weight:300;grid-column:1;grid-row:1;height:25px;justify-self:center;letter-spacing:3px;overflow:hidden;padding-left:15px;text-align:left;transition:all .2s ease-out;width:100%;z-index:2}
+.first-article__image-text{align-self:end;background-color:#fff;box-sizing:border-box;color:#000;display:block;font-size:25px;font-weight:300;grid-column:1;grid-row:1;height:30px;justify-self:center;letter-spacing:3px;overflow:hidden;padding-left:15px;text-align:left;transition:all .2s ease-out;width:100%;z-index:2}
 .first-article__title{font-weight:200;grid-column:1/-1;grid-row:2;letter-spacing:2px;margin:0;padding:0}
 .variant{display:flex;flex-direction:row;gap:25px;padding:50px 0}
 .variant_reversed{display:flex;flex-direction:row-reverse;gap:25px}
@@ -29,7 +29,7 @@
 .gallery__image{border-bottom:1px solid #000;border-radius:10px 10px 0 0;position:relative;transition:transform 1s ease-out;width:350px;z-index:5}
 .gallery__block{border:2px solid rgba(0,0,0,.3);border-radius:10px;display:flex;flex-direction:column;min-width:350px;overflow:hidden;padding:5px}
 .gallery__text{font-weight:400;letter-spacing:5px;text-align:center}
-.lead{background-image:url(images/ec35ac87439439972550.jpg);background-repeat:no-repeat;background-size:100%;height:600px}
+.lead{background-image:url(images/ec35ac87439439972550.jpg);background-repeat:no-repeat;background-size:100%;border-radius:10px;height:600px}
 .lead__title{color:#fff;font-size:70px;font-weight:100;padding-left:150px;padding-top:50px}
 .footer{display:flex;flex-direction:row;flex-wrap:nowrap;justify-content:space-between;padding:25px 0}
 .footer__image-container{display:flex;flex-direction:row}
