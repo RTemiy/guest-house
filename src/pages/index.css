@@ -1,42 +1,84 @@
 @import url(../vendor/normalize.css);
-@import url(../vendor/fonts/fonts.css);
+@import url(../vendor/fonts/caveat/stylesheet.css);
+@import url(../vendor/fonts/comfortaa/stylesheet.css);
 
 @import url(../blocks/root/root.css);
-@import url(../blocks/header/header.css);
-@import url(../blocks/header/__text/header__text.css);
-@import url(../blocks/header/__icon/header__icon.css);
-@import url(../blocks/header/__button/header__button.css);
-@import url(../blocks/header/__button-text/header__button-text.css);
-@import url(../blocks/header/__menu/header__menu.css);
-@import url(../blocks/header/__menu-button/header__menu-button.css);
 
 @import url(../blocks/content/content.css);
 
-@import url(../blocks/first-article/first-article.css);
-@import url(../blocks/first-article/__image/first-article__image.css);
-@import url(../blocks/first-article/__image-container/first-article__image-container.css);
-@import url(../blocks/first-article/__image-text/first-article__image-text.css);
-@import url(../blocks/first-article/__title/first-article__title.css);
-@import url(../blocks/variant/variant.css);
-@import url(../blocks/variant/_reversed/variant_reversed.css);
-@import url(../blocks/variant/__image/variant__image.css);
-@import url(../blocks/variant/__container/variant__container.css);
-@import url(../blocks/variant/__container/_reversed/variant__container_reversed.css);
-@import url(../blocks/variant/__title/variant__title.css);
-@import url(../blocks/variant/__text/variant__text.css);
-@import url(../blocks/variant/__text/_reversed/variant__text_reversed.css);
-@import url(../blocks/variant/__link/variant__link.css);
-@import url(../blocks/gallery/gallery.css);
-@import url(../blocks/gallery/__title/gallery__title.css);
-@import url(../blocks/gallery/__container/gallery__container.css);
-@import url(../blocks/gallery/__image/gallery__image.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__fixed-menu/header__fixed-menu.css);
+@import url(../blocks/header/__link/header__link.css);
+@import url(../blocks/header/__li/header__li.css);
+
 @import url(../blocks/lead/lead.css);
 @import url(../blocks/lead/__title/lead__title.css);
+@import url(../blocks/lead/__undertitle/lead__undertitle.css);
+
+@import url(../blocks/social/social.css);
+@import url(../blocks/social/__li/social__li.css);
+@import url(../blocks/social/__link/social__link.css);
+@import url(../blocks/social/__image/social__image.css);
+@import url(../blocks/social/__paragraph/social__paragraph.css);
+
+@import url(../blocks/underlead/underlead.css);
+@import url(../blocks/underlead/__text/underlead__text.css);
+@import url(../blocks/underlead/container/underlead__container.css);
+
+@import url(../blocks/gallery/gallery.css);
+@import url(../blocks/gallery/__image/gallery__image.css);
+@import url(../blocks/gallery/__button/gallery__button_left.css);
+@import url(../blocks/gallery/__button/gallery__button_right.css);
+
+@import url(../blocks/about/about.css);
+@import url(../blocks/about/__paragraph/about__paragraph.css);
+@import url(../blocks/about/__list/about__list.css);
+@import url(../blocks/about/__list-item/about__list-item.css);
+
+@import url(../blocks/about-us/about-us.css);
+@import url(../blocks/about-us/__paragraph/about-us__paragraph.css);
+@import url(../blocks/about-us/__title/about-us__title.css);
+@import url(../blocks/about-us/__container/about-us__contanier.css);
+@import url(../blocks/about-us/__caption/about-us__caption.css);
+
+@import url(../blocks/weekend/weekend.css);
+@import url(../blocks/weekend/__caption/weekend__caption.css);
+@import url(../blocks/weekend/__title/weekend__title.css);
+@import url(../blocks/weekend/__list/weekend__list.css);
+@import url(../blocks/weekend/__case/weekend__case.css);
+@import url(../blocks/weekend/__case-image/weekend__case-image.css);
+@import url(../blocks/weekend/__case-title/weekend__case-title.css);
+@import url(../blocks/weekend/__case-list-item/weekend__case-list-item.css);
+@import url(../blocks/weekend/__case-text-container/weekend__case-text-container.css);
+@import url(../blocks/weekend/__articles/weekend__articles.css);
+
+@import url(../blocks/weekend/__cost/weekend__cost.css);
+@import url(../blocks/weekend/__cost-list/weekend__cost-list.css);
+@import url(../blocks/weekend/__cost-list-item/weekend__list-item.css);
+@import url(../blocks/weekend/__cost-list/weekend__cost-list.css);
+@import url(../blocks/weekend/__cost-title/weekend__cost-title.css);
+@import url(../blocks/weekend/__cost-text/weekend__cost-text.css);
+@import url(../blocks/weekend/__social/weekend__social.css);
+
+@import url(../blocks/full/full.css);
+@import url(../blocks/full/__list/full__list.css);
+@import url(../blocks/full/__title/full__title.css);
+@import url(../blocks/full/__list-item/full__list-item.css);
+@import url(../blocks/full/__text/full__text.css);
+@import url(../blocks/full/__tables/full__tables.css);
+@import url(../blocks/full/__table/full__table.css);
+@import url(../blocks/full/__table-list/full__table-list.css);
+@import url(../blocks/full/__table-list-item/full__table-list-item.css);
+@import url(../blocks/full/__table-title/full__table-title.css);
+@import url(../blocks/full/__social/full__social.css);
+
 @import url(../blocks/footer/footer.css);
-@import url(../blocks/footer/__image-container/footer__image-container.css);
-@import url(../blocks/footer/__image/footer__image.css);
-@import url(../blocks/footer/__image-link/footer__image-link.css);
+
 @import url(../blocks/reveal/reveal.css);
+
+html{
+  scroll-behavior: smooth;
+}
 
 a{
   text-decoration: none;
@@ -51,21 +93,6 @@ a:hover{
   opacity: 0.6;
 }
 
-li{
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-li:first-child{
-  font-weight: 800;
-}
-
-ul{
-  padding: 0;
-  margin: 0;
-}
-
 button{
   cursor: pointer;
   transition: opacity 1s ease-out;
@@ -73,4 +100,24 @@ button{
 
 button:hover{
   opacity: 0.6;
+}
+
+::-webkit-scrollbar{
+  width : 5px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.3);
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(136, 136, 136, 0.36);
 }

@@ -1,3 +1,6 @@
 .content{
-
+  background-image: url("../../images/big_house.JPG");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

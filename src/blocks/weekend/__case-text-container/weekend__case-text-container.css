@@ -1,0 +1,4 @@
+.weekend__case-text-container{
+  display: flex;
+  flex-direction: column;
+}

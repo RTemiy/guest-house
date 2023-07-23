@@ -1,0 +1,6 @@
+.full__social{
+  position: static;
+  border-radius: 0;
+  justify-content: center;
+  backdrop-filter: unset;
+}

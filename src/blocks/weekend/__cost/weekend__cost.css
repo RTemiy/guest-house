@@ -1,0 +1,6 @@
+.weekend__cost{
+  font-family: var(--additionalFont);
+  padding: 25px;
+  background-color: rgba(0,0,0,.5);
+  color: white;
+}

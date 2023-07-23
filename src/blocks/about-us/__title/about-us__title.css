@@ -1,0 +1,6 @@
+.about-us__title{
+  font-family: var(--mainFont);
+  text-align: center;
+  font-size: 350%;
+  margin: 15px;
+}
