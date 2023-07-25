@@ -1,8 +1,6 @@
 .gallery{
   position: relative;
-  background-image: url("../../images/big_house.JPG");
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 70vh;
   width: auto;
+  background-color: white;
 }

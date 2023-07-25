@@ -1,5 +1,6 @@
 .underlead{
-  background-color: var(--green);
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(15px);
   font-family: var(--additionalFont);
   display: flex;
   flex-direction: row;

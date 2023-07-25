@@ -11,19 +11,26 @@
   <header class="header">
     <nav>
       <ul class="header__fixed-menu">
-        <li class="header__li"><a href="#about" class="header__link">О нашем комплексе</a></li>
-        <li class="header__li"><a href="#weekend" class="header__link">Праздники и корпоративы</a></li>
-        <li class="header__li"><a href="#full" class="header__link">Аренда дома</a></li>
-        <li class="header__li"><a class="header__link">Номерной фонд</a></li>
-        <li class="header__li"><a class="header__link">Конференции и семинары</a></li>
-        <li class="header__li"><a class="header__link">Аренда мангальных беседок</a></li>
-        <li class="header__li"><a class="header__link">Где мы находимся</a></li>
+        <li class="header__li"><div class="header__li-block"><a href="#about" class="header__link">О нашем комплексе</a></div></li>
+        <li class="header__li"><div class="header__li-block"><a href="#weekend" class="header__link">Праздники и корпоративы</a></div></li>
+        <li class="header__li"><div class="header__li-block"><a href="#full" class="header__link">Аренда дома</a></div></li>
+        <li class="header__li"><div class="header__li-block"><a href="#rooms" class="header__link">Номерной фонд</a></div></li>
+        <li class="header__li"><div class="header__li-block"><a href="#seminars" class="header__link">Конференции и семинары</a></div></li>
+        <li class="header__li"><div class="header__li-block"><a href="#brazer" class="header__link">Аренда мангальных беседок</a></div></li>
+        <li class="header__li"><a href="#location" class="header__link">Где мы находимся</a></li>
       </ul>
     </nav>
   </header>
   <main class="content">
-
     <section class="lead">
+      <div class="lead__image">
+      </div>
+      <h1 class="lead__title">
+        Загородный комплекс «ПолянА»
+      </h1>
+      <p class="lead__undertitle">
+        отдых в деревне Рыжево, г. о. Егорьевск
+      </p>
       <ul class="social">
         <li class="social__li">
           <a class="social__link">
@@ -52,39 +59,45 @@
           </a>
         </li>
       </ul>
-
-      <h1 class="lead__title">
-        Загородный комплекс «ПолянА»
-      </h1>
-      <p class="lead__undertitle">
-        отдых в деревне Рыжево, г. о. Егорьевск
-      </p>
     </section>
     <div class="underlead">
       <div class="underlead__container">
-        <a class="underlead__text">
+        <a class="underlead__text" href="#weekend">
           Праздники: от 1500 ₽ за 1 человека
         </a>
       </div>
       <div class="underlead__container">
-        <a class="underlead__text">
+        <a class="underlead__text" href="#full">
           Аренда дома: от 20 000 ₽
         </a>
       </div>
       <div class="underlead__container">
-        <a class="underlead__text">
+        <a class="underlead__text" href="#rooms">
           Аренда номера: от 3000 ₽
         </a>
       </div>
       <div class="underlead__container">
-        <a class="underlead__text">
+        <a class="underlead__text" href="#brazer">
           Аренда беседки: 5000 ₽
         </a>
       </div>
     </div>
 
-    <div class="gallery">
-      <div class="gallery__image"></div>
+    <div id="gallery-about" class="gallery">
+      <div  class="gallery__images">
+        <img class="gallery__image" src="<%=require('./images/lead/01.jpg')%>">
+        <img class="gallery__image" src="<%=require('./images/lead/02.jpg')%>">
+        <img class="gallery__image" src="<%=require('./images/lead/03.jpg')%>">
+        <img class="gallery__image" src="<%=require('./images/lead/04.jpg')%>">
+        <img class="gallery__image" src="<%=require('./images/lead/05.jpg')%>">
+        <img class="gallery__image" src="<%=require('./images/lead/06.jpg')%>">
+        <img class="gallery__image" src="<%=require('./images/lead/07.jpg')%>">
+        <img class="gallery__image" src="<%=require('./images/lead/08.jpg')%>">
+        <img class="gallery__image" src="<%=require('./images/lead/09.jpg')%>">
+        <img class="gallery__image" src="<%=require('./images/lead/10.jpg')%>">
+        <img class="gallery__image" src="<%=require('./images/lead/11.jpg')%>">
+        <img class="gallery__image" src="<%=require('./images/lead/12.jpg')%>">
+      </div>
       <button type="button" class="gallery__button_left"></button>
       <button type="button" class="gallery__button_right"></button>
     </div>
@@ -125,24 +138,36 @@
           Мы семья, которая много путешествует и оценивает гостиничный сервис в разных точках земли.
           У нас сформировался свой взгляд на место, где хочется отдохнуть от города и работы, провести время с семьей или с друзьями.
         </p>
+        <p class="about-us__paragraph">
           Это Удобная мебель, исправная техника, звукоизоляция помещений, детские игровые зоны, wi-fi, просторный банкетный зал,
           возможность самостоятельно готовить, тишина и покой. Мы ценим эти вещи и предоставляем их вам в нашем загородном комплексе.
         </p>
       </div>
-      <a>
+      <!--<a>
       <p class="about-us__caption">
         Дом находится в семи километрах от города Егорьевск в деревне Рыжево.
         Вы сможете доехать до нас по асфальтированной дороге и оставить машину на закрытой парковке.
       </p>
       </a>
+      -->
     </section>
 
     <section id="weekend" class="weekend">
+      <div class="weekend__header">
       <h2 class="weekend__title">Празднуйте в банкетном зале или на открытом воздухе</h2>
       <p class="weekend__caption">Отмечайте знаковое событие в атмосфере красивых лесных пейзажей и чистого деревенского воздуха.
         Приезжайте к нам со своими друзьями и близкими за впечатлениями большого праздника.</p>
-      <div class="gallery">
-        <div class="gallery__image"></div>
+      </div>
+      <div id="gallery-weekend" class="gallery">
+        <div  class="gallery__images">
+          <img class="gallery__image" src="<%=require('./images/weekend/01.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/weekend/02.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/weekend/03.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/weekend/04.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/weekend/05.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/weekend/06.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/weekend/07.jpg')%>">
+        </div>
         <button type="button" class="gallery__button_left"></button>
         <button type="button" class="gallery__button_right"></button>
       </div>
@@ -232,7 +257,7 @@
             готовите праздничный стол сами или мы находим поваров
           </li>
           <li class="weekend__cost-list-item">
-            сколько будет гостей
+            количество гостей
           </li>
           <li class="weekend__cost-list-item">
             нужно ли размещение в номерах с ночёвкой (не более 11 человек)
@@ -277,20 +302,42 @@
         </li>
       </ul>
     </section>
-
     <section id="full" class="full">
+      <div class="full__header">
       <h2 class="full__title">
         Снимайте целый дом для большой компании
       </h2>
       <p class="full__text">
         Снять дом можете не только для торжеств. Если хотите просто собраться с друзьями в приватном месте, мы предоставим весь дом целиком. Вы заселитесь в номера, кухня, холл и банкетный зал в вашем распоряжении.
       </p>
-      <div class="gallery">
-        <div class="gallery__image"></div>
+      </div>
+      <div id="gallery-full" class="gallery">
+        <div  class="gallery__images">
+          <img class="gallery__image" src="<%=require('./images/lead/01.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/full/01.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/full/02.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/full/03.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/full/04.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/full/05.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/full/06.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/full/07.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/full/08.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/full/09.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/full/10.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/full/11.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/full/12.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/full/13.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/full/14.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/full/15.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/full/16.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/full/17.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/full/18.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/full/19.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/full/20.jpg')%>">
+        </div>
         <button type="button" class="gallery__button_left"></button>
         <button type="button" class="gallery__button_right"></button>
       </div>
-
       <ul class="full__list">
         <li class="full__list-item">корпус из четырёх номеров с отдельными санузлами</li>
         <li class="full__list-item">территория с парковкой, патио, беседками и детской площадкой</li>
@@ -343,6 +390,533 @@
           </a>
         </li>
       </ul>
+    </section>
+     <section id="rooms" class="rooms">
+       <div class="rooms__header">
+         <h2 class="rooms__header-title">Замедлитесь и зарядитесь силой подмосковной глубинки</h2>
+         <p class="rooms__header-paragraph">Отдыхайте в номерах, если просто устали и хотите выспаться. Мы поможем набраться сил и провести время с семьей вдали от забот. У нас есть для вас:</p>
+         <ul class="rooms__header-list">
+           <li class="rooms__header-list-item">корпус из четырёх номеров с отдельными санузлами</li>
+           <li class="rooms__header-list-item">территория с парковкой, патио, беседками и детской площадкой*</li>
+           <li class="rooms__header-list-item">банкетный зал + детская игровая зона</li>
+           <li class="rooms__header-list-item">светлый лес в 100 метрах</li>
+           <li class="rooms__header-list-item">деревенский пейзаж</li>
+         </ul>
+         <p class="rooms__header-paragraph">* Беседка в стоимость не входит и сдаётся в аренду с мангалами.</p>
+       </div>
+       <article class="room">
+         <div class="room__header">
+           <h2 class="room__header-title">Номер “Мята” с тёплыми полами</h2>
+           <div id="gallery-myata" class="gallery">
+             <div class="gallery__images">
+               <img class="gallery__image" src="<%=require('./images/room_myata/01.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_myata/02.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_myata/03.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_myata/04.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_myata/05.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_myata/06.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_myata/07.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_myata/08.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_myata/09.jpg')%>">
+             </div>
+             <button type="button" class="gallery__button_left"></button>
+             <button type="button" class="gallery__button_right"></button>
+           </div>
+         </div>
+         <div class="room__main">
+           <h3 class="room__main-list-title">Параметры: </h3>
+           <ul class="room__main-list">
+             <li class="room__main-list-item">Площадь 10 кв.м</li>
+             <li class="room__main-list-item">Двуспальная Кровать</li>
+             <li class="room__main-list-item">Отдельный санузел</li>
+             <li class="room__main-list-item">Тёплые полы</li>
+             <li class="room__main-list-item">Шкаф-купе</li>
+             <li class="room__main-list-item">Телевизор</li>
+             <li class="room__main-list-item">Стол и стулья</li>
+             <li class="room__main-list-item">Чайный набор</li>
+             <li class="room__main-list-item">Wi-fi</li>
+           </ul>
+           <p class="room__main-paragraph"><span class="room__main-span">Описание: </span>двухместный номер с отдельной ванной и санузлом. Подходит для тех, кто много проводит время на открытом воздухе, а номер использует в основном для сна. Номер в теневой стороне дома, поэтому летом в нём не жарко. Зимой комфортную температуру можно настроить терморегулятором.</p>
+           <p class="room__main-paragraph">❗ не для размещения с животными</p>
+           <p class="room__main-paragraph">❗ в номере нельзя курить</p>
+           <p class="room__main-paragraph"><span class="room__main-span">На заметку. </span>У номера «Мята» общая прихожая с номером «Мимоза». Номер можно снять отдельно или снимайте оба номера в тандеме для компании на 4-5 человек. В общей прихожей большой шкаф-купе для верхней одежды и чемоданов.</p>
+         </div>
+         <div class="room__footer">
+           <p class="room__footer_text">3000 ₽ в сутки</p>
+           <ul class="social full__social">
+             <li class="social__li">
+               <a class="social__link">
+                 <img class="social__image" src="<%=require('./images/icons/ig.png')%>">
+               </a>
+             </li>
+             <li class="social__li">
+               <a class="social__link" href="https://t.me/polyanaEgorevsk/9">
+                 <img class="social__image" src="<%=require('./images/icons/tg.png')%>">
+               </a>
+             </li>
+             <li class="social__li">
+               <a class="social__link" href="https://wa.me/+79150955157">
+                 <img class="social__image" src="<%=require('./images/icons/wp.png')%>">
+               </a>
+             </li>
+             <li class="social__li">
+               <a class="social__link" href="viber://chat?number=%2B79150955157">
+                 <img class="social__image" src="<%=require('./images/icons/vb.png')%>">
+               </a>
+             </li>
+             <li class="social__li">
+               <a href="tel:+79150955157">
+                 <p class="social__paragraph">Забронировать</p>
+                 <p class="social__paragraph">+ 7-915-095-51-57</p>
+               </a>
+             </li>
+           </ul>
+         </div>
+
+       </article>
+
+       <article class="room">
+         <div class="room__header">
+           <h2 class="room__header-title">Номер «Мимоза» с тёплыми полами</h2>
+           <div id="gallery-mimoza" class="gallery">
+             <div  class="gallery__images">
+               <img class="gallery__image" src="<%=require('./images/room_mimoza/01.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_mimoza/02.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_mimoza/03.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_mimoza/04.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_mimoza/05.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_mimoza/06.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_mimoza/07.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_mimoza/08.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_mimoza/09.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_mimoza/10.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_mimoza/11.jpg')%>">
+             </div>
+             <button type="button" class="gallery__button_left"></button>
+             <button type="button" class="gallery__button_right"></button>
+           </div>
+         </div>
+         <div class="room__main">
+           <h3 class="room__main-list-title">Параметры:</h3>
+           <ul class="room__main-list">
+             <li class="room__main-list-item">Площадь 17 кв.м</li>
+             <li class="room__main-list-item">Двуспальная кровать</li>
+             <li class="room__main-list-item">Софа</li>
+             <li class="room__main-list-item">Отдельный санузел</li>
+             <li class="room__main-list-item">Тёплые полы</li>
+             <li class="room__main-list-item">Шкаф</li>
+             <li class="room__main-list-item">Телевизор</li>
+             <li class="room__main-list-item">Стол и стулья</li>
+             <li class="room__main-list-item">Чайный набор</li>
+             <li class="room__main-list-item">Wi-fi</li>
+           </ul>
+           <p class="room__main-paragraph"><span class="room__main-span">Описание: </span>светлый двухкомнатный номер на троих с отдельной ванной и санузлом. Подходит для тех, кто много проводит время на открытом воздухе, а номер использует в основном для сна. Телевизор находится в гостиной с софой. Летом, чтобы не было жарко достаточно открыть оба окна — будет приятный сквозняк. Зимой терморегулятором настраиваете комфортную температуру тёплых полов.</p>
+           <p class="room__main-paragraph">❗ не для размещения с животными</p>
+           <p class="room__main-paragraph">❗ в номере нельзя курить</p>
+           <p class="room__main-paragraph"><span class="room__main-span">На заметку. </span>У номера «Мимоза» общая прихожая с номером «Мята». Номер можно снять отдельно или снимайте оба номера в тандеме для компании на 4-5 человек. В общей прихожей большой шкаф-купе для верхней одежды и чемоданов. </p>
+         </div>
+         <div class="room__footer">
+           <p class="room__footer_text">4000 ₽ в сутки</p>
+           <ul class="social full__social">
+             <li class="social__li">
+               <a class="social__link">
+                 <img class="social__image" src="<%=require('./images/icons/ig.png')%>">
+               </a>
+             </li>
+             <li class="social__li">
+               <a class="social__link" href="https://t.me/polyanaEgorevsk/9">
+                 <img class="social__image" src="<%=require('./images/icons/tg.png')%>">
+               </a>
+             </li>
+             <li class="social__li">
+               <a class="social__link" href="https://wa.me/+79150955157">
+                 <img class="social__image" src="<%=require('./images/icons/wp.png')%>">
+               </a>
+             </li>
+             <li class="social__li">
+               <a class="social__link" href="viber://chat?number=%2B79150955157">
+                 <img class="social__image" src="<%=require('./images/icons/vb.png')%>">
+               </a>
+             </li>
+             <li class="social__li">
+               <a href="tel:+79150955157">
+                 <p class="social__paragraph">Забронировать</p>
+                 <p class="social__paragraph">+ 7-915-095-51-57</p>
+               </a>
+             </li>
+           </ul>
+         </div>
+
+       </article>
+
+       <article class="room">
+         <div class="room__header">
+           <h2 class="room__header-title">Номер "Цветочный" с лоджией</h2>
+           <div id="gallery-flowers" class="gallery">
+             <div class="gallery__images">
+               <img class="gallery__image" src="<%=require('./images/room_flowers/01.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_flowers/02.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_flowers/03.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_flowers/04.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_flowers/05.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_flowers/06.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_flowers/07.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_flowers/08.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_flowers/09.jpg')%>">
+             </div>
+             <button type="button" class="gallery__button_left"></button>
+             <button type="button" class="gallery__button_right"></button>
+           </div>
+         </div>
+         <div class="room__main">
+           <h3 class="room__main-list-title">Параметры:</h3>
+           <ul class="room__main-list">
+             <li class="room__main-list-item">Площадь 20 кв.м</li>
+             <li class="room__main-list-item">Угловой раскладной диван</li>
+             <li class="room__main-list-item">Кресло</li>
+             <li class="room__main-list-item">Отдельный санузел</li>
+             <li class="room__main-list-item">Лоджия</li>
+             <li class="room__main-list-item">Шкаф-купе</li>
+             <li class="room__main-list-item">Телевизор</li>
+             <li class="room__main-list-item">Рабочий стол</li>
+             <li class="room__main-list-item">Чайный набор</li>
+             <li class="room__main-list-item">Wi-fi</li>
+
+           </ul>
+           <p class="room__main-paragraph"><span class="room__main-span">Описание: </span>просторный номер с лоджией и видом на внутренний двор комплекса. Подходит для отдыха или для тех, кто хочет поработать удалённо в тихом и комфортном месте. Комната светлая, но для здорового сна можно закрыть окна глухими шторами.</p>
+           <p class="room__main-paragraph">❗ не для размещения с животными</p>
+           <p class="room__main-paragraph">❗ в номере нельзя курить</p>
+         </div>
+         <div class="room__footer">
+           <p class="room__footer_text">4000 ₽ в сутки</p>
+           <ul class="social full__social">
+             <li class="social__li">
+               <a class="social__link">
+                 <img class="social__image" src="<%=require('./images/icons/ig.png')%>">
+               </a>
+             </li>
+             <li class="social__li">
+               <a class="social__link" href="https://t.me/polyanaEgorevsk/9">
+                 <img class="social__image" src="<%=require('./images/icons/tg.png')%>">
+               </a>
+             </li>
+             <li class="social__li">
+               <a class="social__link" href="https://wa.me/+79150955157">
+                 <img class="social__image" src="<%=require('./images/icons/wp.png')%>">
+               </a>
+             </li>
+             <li class="social__li">
+               <a class="social__link" href="viber://chat?number=%2B79150955157">
+                 <img class="social__image" src="<%=require('./images/icons/vb.png')%>">
+               </a>
+             </li>
+             <li class="social__li">
+               <a href="tel:+79150955157">
+                 <p class="social__paragraph">Забронировать</p>
+                 <p class="social__paragraph">+ 7-915-095-51-57</p>
+               </a>
+             </li>
+           </ul>
+         </div>
+
+       </article>
+
+       <article class="room">
+         <div class="room__header">
+           <h2 class="room__header-title">Двухэтажный номер “Рассвет” с кухней и уличной террасой</h2>
+           <div id="gallery-sunrise" class="gallery">
+             <div class="gallery__images">
+               <img class="gallery__image" src="<%=require('./images/room_sunrise/01.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_sunrise/02.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_sunrise/03.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_sunrise/04.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_sunrise/05.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_sunrise/06.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_sunrise/07.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_sunrise/08.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_sunrise/09.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_sunrise/10.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_sunrise/11.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_sunrise/12.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_sunrise/13.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_sunrise/14.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_sunrise/15.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_sunrise/16.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_sunrise/17.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_sunrise/18.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_sunrise/19.jpg')%>">
+               <img class="gallery__image" src="<%=require('./images/room_sunrise/20.jpg')%>">
+             </div>
+             <button type="button" class="gallery__button_left"></button>
+             <button type="button" class="gallery__button_right"></button>
+           </div>
+         </div>
+         </div>
+         <div class="room__main">
+           <h3 class="room__main-list-title">Параметры:</h3>
+           <ul class="room__main-list">
+             <li class="room__main-list-item">Площадь 25 кв. м</li>
+             <li class="room__main-list-item">Двуспальная кровать</li>
+             <li class="room__main-list-item">2 раскладных кресла</li>
+             <li class="room__main-list-item">Кухня + кухонная утварь</li>
+             <li class="room__main-list-item">Холодильник</li>
+             <li class="room__main-list-item">Посудомойка</li>
+             <li class="room__main-list-item">Капсульная кофемашина</li>
+             <li class="room__main-list-item">Микроволновка</li>
+             <li class="room__main-list-item">Отдельный санузел</li>
+             <li class="room__main-list-item">Открытая терраса</li>
+             <li class="room__main-list-item">Шкаф-купе</li>
+             <li class="room__main-list-item">Телевизор</li>
+             <li class="room__main-list-item">Рабочий стол</li>
+             <li class="room__main-list-item">Обеденный стол</li>
+             <li class="room__main-list-item">Wi-fi</li>
+           </ul>
+           <p class="room__main-paragraph"><span class="room__main-span">Описание: </span>двухэтажный номер подходит для семейной пары с одним-двумя детьми. На первом этаже прихожая, кухня, комната с двумя спальными местами и санузел. На втором этаже спальня с окнами и видом на лес и фермерские поля. В номере есть открытая терраса, затенённая сосновыми кронами. Летом — подходящее место для отдыха и приёма пищи. </p>
+           <p class="room__main-paragraph">❗ не для размещения с животными</p>
+           <p class="room__main-paragraph">❗ в номере нельзя курить</p>
+         </div>
+         <div class="room__footer">
+           <p class="room__footer_text">5000 ₽ в сутки</p>
+           <ul class="social full__social">
+             <li class="social__li">
+               <a class="social__link">
+                 <img class="social__image" src="<%=require('./images/icons/ig.png')%>">
+               </a>
+             </li>
+             <li class="social__li">
+               <a class="social__link" href="https://t.me/polyanaEgorevsk/9">
+                 <img class="social__image" src="<%=require('./images/icons/tg.png')%>">
+               </a>
+             </li>
+             <li class="social__li">
+               <a class="social__link" href="https://wa.me/+79150955157">
+                 <img class="social__image" src="<%=require('./images/icons/wp.png')%>">
+               </a>
+             </li>
+             <li class="social__li">
+               <a class="social__link" href="viber://chat?number=%2B79150955157">
+                 <img class="social__image" src="<%=require('./images/icons/vb.png')%>">
+               </a>
+             </li>
+             <li class="social__li">
+               <a href="tel:+79150955157">
+                 <p class="social__paragraph">Забронировать</p>
+                 <p class="social__paragraph">+ 7-915-095-51-57</p>
+               </a>
+             </li>
+           </ul>
+         </div>
+       </article>
+     </section>
+    <section id="seminars" class="seminars">
+      <div class="seminars__header">
+        <h2 class="seminars__header-title">Конференции и семинары</h2>
+        <p class="seminars__header-text">В "Поляне" можно устроить общие профессиональные собрания, тренинги или семинары. Проведите деловые встречи в удобной обстановке, где ничто не будет отвлекать.</p>
+      </div>
+      <div id="gallery-seminars" class="gallery">
+        <div class="gallery__images"></div>
+        <button type="button" class="gallery__button_left"></button>
+        <button type="button" class="gallery__button_right"></button>
+      </div>
+      <div class="seminars__main">
+        <ul class="seminars__list">
+          <li class="seminars__list-item">зал на 30 человек</li>
+          <li class="seminars__list-item">столы, стулья и диваны</li>
+          <li class="seminars__list-item">акустическая система с bluetooth</li>
+          <li class="seminars__list-item">широкоформатный телевизор с выходом в интернет</li>
+          <li class="seminars__list-item">канцелярские принадлежности</li>
+          <li class="seminars__list-item">парковка на 7 автомобилей</li>
+          <li class="seminars__list-item">кофе-брейк</li>
+          <li class="seminars__list-item">зона для курения на улице</li>
+          <li class="seminars__list-item">wi-fi</li>
+        </ul>
+      </div>
+      <div class="seminars__footer">
+        <p class="seminars__footer-text">1500 ₽ в сутки</p>
+        <ul class="social full__social">
+          <li class="social__li">
+            <a class="social__link">
+              <img class="social__image" src="<%=require('./images/icons/ig.png')%>">
+            </a>
+          </li>
+          <li class="social__li">
+            <a class="social__link" href="https://t.me/polyanaEgorevsk/9">
+              <img class="social__image" src="<%=require('./images/icons/tg.png')%>">
+            </a>
+          </li>
+          <li class="social__li">
+            <a class="social__link" href="https://wa.me/+79150955157">
+              <img class="social__image" src="<%=require('./images/icons/wp.png')%>">
+            </a>
+          </li>
+          <li class="social__li">
+            <a class="social__link" href="viber://chat?number=%2B79150955157">
+              <img class="social__image" src="<%=require('./images/icons/vb.png')%>">
+            </a>
+          </li>
+          <li class="social__li">
+            <a href="tel:+79150955157">
+              <p class="social__paragraph">Забронировать</p>
+              <p class="social__paragraph">+ 7-915-095-51-57</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="brazer" id="brazer">
+      <div class="brazer__header">
+        <h2 class="brazer__header-title">Аренда мангальной зоны с беседкой</h2>
+        <p class="brazer__header-text">В хорошую погоду хочется отдыхать на природе. Для этого в загородном комплексе «ПолянА» есть открытая зона отдыха для взрослых и детей размером с половину футбольного поля. Вы сможете отдохнуть компанией, пожарить шашлык, позагорать, посидеть у костра или провести занятия йогой.</p>
+      </div>
+      <div id="gallery-brazer" class="gallery">
+        <div class="gallery__images">
+          <img class="gallery__image" src="<%=require('./images/brazer/01.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/brazer/02.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/brazer/03.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/brazer/04.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/brazer/05.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/brazer/06.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/brazer/07.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/brazer/08.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/brazer/09.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/brazer/10.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/brazer/11.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/brazer/12.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/brazer/13.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/brazer/14.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/brazer/15.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/brazer/16.jpg')%>">
+        </div>
+        <button type="button" class="gallery__button_left"></button>
+        <button type="button" class="gallery__button_right"></button>
+      </div>
+      <div class="brazer__main">
+        <ul class="brazer__main-list">
+          <li class="brazer__main-list-item">беседки на 5-12 человек с освещением и розетками</li>
+          <li class="brazer__main-list-item">мангальные зоны с реквизитом для шашлыка</li>
+          <li class="brazer__main-list-item">патио с костром и скамейками</li>
+          <li class="brazer__main-list-item">садовые качели</li>
+          <li class="brazer__main-list-item">детская площадка с батутом</li>
+          <li class="brazer__main-list-item">тёплый уличный туалет</li>
+          <li class="brazer__main-list-item">зона для курения</li>
+          <li class="brazer__main-list-item">парковка на 7 автомобилей</li>
+        </ul>
+        <p class="brazer__main-paragraph">Вокруг комплекса лес, рядом есть ферма. Можно пройтись по многочисленным лесным тропкам, а летом искупаться в большом песчаном пруду в соседнем СНТ.</p>
+      </div>
+      <div class="brazer__footer">
+        <div>
+          <p class="brazer__footer-text">5000 ₽ в сутки</p>
+          <p class="brazer__footer-text">Аренда на весь день. В стоимость входят все уличные объекты комплекса и реквизит для шашлыка (мангал, дрова, розжиг). Пользование домом и номерами за отдельную плату.</p>
+        </div>
+        <ul class="social full__social">
+          <li class="social__li">
+            <a class="social__link">
+              <img class="social__image" src="<%=require('./images/icons/ig.png')%>">
+            </a>
+          </li>
+          <li class="social__li">
+            <a class="social__link" href="https://t.me/polyanaEgorevsk/9">
+              <img class="social__image" src="<%=require('./images/icons/tg.png')%>">
+            </a>
+          </li>
+          <li class="social__li">
+            <a class="social__link" href="https://wa.me/+79150955157">
+              <img class="social__image" src="<%=require('./images/icons/wp.png')%>">
+            </a>
+          </li>
+          <li class="social__li">
+            <a class="social__link" href="viber://chat?number=%2B79150955157">
+              <img class="social__image" src="<%=require('./images/icons/vb.png')%>">
+            </a>
+          </li>
+          <li class="social__li">
+            <a href="tel:+79150955157">
+              <p class="social__paragraph">Забронировать</p>
+              <p class="social__paragraph">+ 7-915-095-51-57</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="location" class="location">
+      <div class="location__header">
+        <h2 class="location__header-title">Мы находимся в деревне Рыжево в 7&nbsp;километрах от г. Егорьевск</h2>
+      </div>
+      <div class="location__main">
+        <div class="location__map">
+          <div class="location__map-block"><div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/1/moscow-and-moscow-oblast/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва и Московская область</a><a href="https://yandex.ru/maps/1/moscow-and-moscow-oblast/house/derevnya_ryzhevo_39/Z0AYdwZjQUAGQFtvfXhyeHhkYw==/?from=mapframe&ll=39.113851%2C55.439477&utm_medium=mapframe&utm_source=maps&z=16" style="color:#eee;font-size:12px;position:absolute;top:14px;">Деревня Рыжево, 39 на карте Москвы и Московской области — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?from=mapframe&ll=39.113851%2C55.439477&mode=whatshere&whatshere%5Bpoint%5D=39.113851%2C55.439477&whatshere%5Bzoom%5D=17&z=16" width="560" height="400" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div></div>
+          <div class="location__map-text">
+            <p class="location__text">После съезда с Егорьевского шоссе доезжаете до деревни Костылёво. В конце деревни будет поворот направо. Едете по асфальтированной дороге, никуда не сворачиваете. Через минуту въезжаете в д. Рыжево. Мы находимся в её конце справа у самого леса.
+            </p>
+            <p class="location__text">Д. Рыжево, дом 39. Загородный комплекс «ПолянА»</p>
+            <p class="location__text-bold">Звоните нам: +7-915-095-51-57</p>
+          </div>
+        </div>
+          <h2 class="location__additional-title">Что ещё есть в деревне:</h2>
+          <div id="gallery-location" class="gallery">
+            <div class="gallery__images">
+              <img class="gallery__image" src="<%=require('./images/brazer/01.jpg')%>">
+              <img class="gallery__image" src="<%=require('./images/brazer/02.jpg')%>">
+              <img class="gallery__image" src="<%=require('./images/brazer/03.jpg')%>">
+              <img class="gallery__image" src="<%=require('./images/brazer/04.jpg')%>">
+              <img class="gallery__image" src="<%=require('./images/brazer/05.jpg')%>">
+              <img class="gallery__image" src="<%=require('./images/brazer/06.jpg')%>">
+              <img class="gallery__image" src="<%=require('./images/brazer/07.jpg')%>">
+              <img class="gallery__image" src="<%=require('./images/brazer/08.jpg')%>">
+              <img class="gallery__image" src="<%=require('./images/brazer/09.jpg')%>">
+              <img class="gallery__image" src="<%=require('./images/brazer/10.jpg')%>">
+              <img class="gallery__image" src="<%=require('./images/brazer/11.jpg')%>">
+              <img class="gallery__image" src="<%=require('./images/brazer/12.jpg')%>">
+              <img class="gallery__image" src="<%=require('./images/brazer/13.jpg')%>">
+              <img class="gallery__image" src="<%=require('./images/brazer/14.jpg')%>">
+              <img class="gallery__image" src="<%=require('./images/brazer/15.jpg')%>">
+              <img class="gallery__image" src="<%=require('./images/brazer/16.jpg')%>">
+            </div>
+            <button type="button" class="gallery__button_left"></button>
+            <button type="button" class="gallery__button_right"></button>
+            </div>
+            <ul class="location__list">
+              <li class="location__list-item">близость леса с тропками до соседних деревень</li>
+              <li class="location__list-item">большой песчаный пруд в 200 метрах от комплекса</li>
+              <li class="location__list-item">деревенский магазин</li>
+              <li class="location__list-item">фермерское хозяйство</li>
+              <li class="location__list-item">храм Пресвятой Богородицы</li>
+            </ul>
+        <div class="location__footer">
+          <ul class="social full__social">
+            <li class="social__li">
+              <a class="social__link">
+                <img class="social__image" src="<%=require('./images/icons/ig.png')%>">
+              </a>
+            </li>
+            <li class="social__li">
+              <a class="social__link" href="https://t.me/polyanaEgorevsk/9">
+                <img class="social__image" src="<%=require('./images/icons/tg.png')%>">
+              </a>
+            </li>
+            <li class="social__li">
+              <a class="social__link" href="https://wa.me/+79150955157">
+                <img class="social__image" src="<%=require('./images/icons/wp.png')%>">
+              </a>
+            </li>
+            <li class="social__li">
+              <a class="social__link" href="viber://chat?number=%2B79150955157">
+                <img class="social__image" src="<%=require('./images/icons/vb.png')%>">
+              </a>
+            </li>
+            <li class="social__li">
+              <a href="tel:+79150955157">
+                <p class="social__paragraph">Забронировать</p>
+                <p class="social__paragraph">+ 7-915-095-51-57</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
     </section>
 
   </main>

@@ -1,6 +1,7 @@
 .weekend__caption{
   width: 70%;
-  margin: 25px auto;
+  margin: auto;
+  padding-top: 25px;
   font-family: Comfortaa,sans-serif;
   text-align: center;
 }

@@ -1,6 +1,6 @@
 .about-us{
   font-family: var(--additionalFont);
-  padding-top: 5px;
+  padding: 5px 0 25px 0;
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
