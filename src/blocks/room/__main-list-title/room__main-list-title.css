@@ -1,0 +1,6 @@
+.room__main-list-title{
+  font-family: var(--mainFont);
+  font-size: 150%;
+  margin: 15px 0 0 15px;
+  padding: 0;
+}

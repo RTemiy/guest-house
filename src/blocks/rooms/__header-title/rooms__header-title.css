@@ -1,0 +1,7 @@
+.rooms__header-title{
+  margin: 0;
+  padding-top: 50px;
+  font-size: 350%;
+  text-align: center;
+  font-family: var(--mainFont);
+}

@@ -1,0 +1,9 @@
+.gallery__images{
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+  height: 70vh;
+  overflow: hidden;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}

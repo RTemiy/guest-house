@@ -1,0 +1,11 @@
+.rooms__header-paragraph{
+  width: 70%;
+  text-align: left;
+  margin: auto;
+  padding: 25px 0 5px 0;
+}
+
+.rooms__header-paragraph:last-of-type{
+  padding-top: 5px;
+  text-align: center;
+}

@@ -1,0 +1,10 @@
+.location__map{
+  margin: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  width: 90%;
+  box-shadow: 0 0 5px black;
+}
