@@ -8,9 +8,11 @@ reveal();
 
 new Gallery("#gallery-about");
 new Gallery("#gallery-weekend");
-new Gallery("#gallery-myata");
 new Gallery("#gallery-full");
-new Gallery("#gallery-sunrise");
+new Gallery("#gallery-myata");
+new Gallery("#gallery-mimoza");
 new Gallery("#gallery-flowers");
+new Gallery("#gallery-sunrise");
 new Gallery("#gallery-seminars");
+new Gallery("#gallery-brazer");
 new Gallery("#gallery-location");
