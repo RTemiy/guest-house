@@ -4,10 +4,12 @@
 :root{--green:#99c094;--mainFont:"Caveat",Caveat,sans-serif;--additionalFont:"Comfortaa",Comfortaa,sans-serif}.root{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;box-sizing:border-box;color:#000;font-family:var(--mainFont);font-style:normal;margin:0 auto;max-width:1280px;text-rendering:optimizeLegibility}
 
 .header{background-color:var(--green);font-size:130%;left:0;padding:10px;position:fixed;top:0;width:100%;z-index:4}@media (max-width:1280px){.header{box-shadow:0 0 5px #000}}
-.header__li-block{border-right:1px solid rgba(0,0,0,.25);height:100%;padding-right:20px}
+.header__li-block{border-right:1px solid rgba(0,0,0,.25);height:100%;padding-right:20px;position:relative}.header__li-block:hover>.header__special-menu{opacity:1;visibility:visible}
 .header__fixed-menu{align-content:center;align-items:center;display:flex;flex-direction:row;gap:25px;justify-content:center;margin:0;padding:0}
 .header__link{color:#fff}
 .header__li{list-style-type:none;margin:0;padding:0;text-align:center}
+.header__special-menu{background-color:var(--green);border-radius:0 0 15px 15px;color:#fff;left:-20px;margin:0;opacity:0;padding:0;position:absolute;top:30px;transition:all .5s ease-in-out;visibility:hidden}
+.header__special-menu-item{color:#fff;list-style:none;margin:0;padding:5px 0 0;width:150px}
 .lead{align-items:center;background-attachment:fixed;background-color:hsla(0,0%,100%,.25);background-image:url(images/c13ac6f3b8116f9e1228.jpg);background-repeat:no-repeat;background-size:cover;display:flex;flex-direction:column;gap:16px;height:200px;justify-content:flex-end;padding:125px 0 25px;position:relative}
 .lead__title{color:#000;font-size:250%;margin:0;padding:0}
 .lead__undertitle{color:#000;font-size:200%;margin:0;padding:0 0 32px}
