@@ -1,10 +1,23 @@
 .social{
   display: flex;
   flex-direction: row;
-  background-color: rgba(128, 128, 128, 0.6);
   border-radius: 15px;
   margin: 0;
   gap: 10px;
   padding: 15px;
   height: 50px;
+
+}
+
+@media (max-width: 700px) {
+  .social{
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 400px) {
+  .social{
+    padding: 10px;
+    font-size: 70%;
+  }
 }

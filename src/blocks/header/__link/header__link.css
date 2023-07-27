@@ -1,3 +1,5 @@
 .header__link{
   color: white;
+  font-family: var(--additionalFont);
+  font-size: 75%;
 }

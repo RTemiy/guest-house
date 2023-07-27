@@ -13,3 +13,9 @@
 
 .social__paragraph:first-child{
 }
+
+@media (max-width: 700px) {
+  .social__paragraph{
+    line-height: 15px;
+  }
+}

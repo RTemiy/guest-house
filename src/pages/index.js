@@ -16,3 +16,10 @@ new Gallery("#gallery-sunrise");
 new Gallery("#gallery-seminars");
 new Gallery("#gallery-brazer");
 new Gallery("#gallery-location");
+
+const buttonHeader = document.querySelector('#header-button');
+const mobileMenu = document.querySelector('.header__fixed-menu');
+
+buttonHeader.onclick = () =>{
+  mobileMenu.classList.toggle('header__fixed-menu_active');
+}

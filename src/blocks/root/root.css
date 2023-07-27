@@ -2,11 +2,25 @@
   --green : rgb(153, 192, 148);
   --mainFont: 'Caveat', Caveat, sans-serif;
   --additionalFont : 'Comfortaa', Comfortaa, sans-serif;
+  --sizeText: 100%;
+}
+
+@media (max-width: 1000px) {
+  :root{
+    --sizeText: 85%;
+  }
+}
+
+@media (max-width: 1000px) {
+  :root{
+    --sizeText: 70%;
+  }
 }
 
 .root{
   color: black;
   font-family: var(--mainFont);
+  font-size: var(--sizeText);
   font-style: normal;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;

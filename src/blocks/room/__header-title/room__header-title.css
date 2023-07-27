@@ -1,7 +1,7 @@
 .room__header-title{
   font-family: var(--mainFont);
-  padding: 25px 0 10px 0;
-  margin: 0 0 15px 0;
+  padding: 75px 0 10px 0;
+  margin: 0 25px;
   font-size: 250%;
   text-align: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);

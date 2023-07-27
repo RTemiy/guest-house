@@ -7,4 +7,22 @@
   align-items: center;
   padding: 0;
   margin: 0;
+  transition: height .5s ease-in-out;
+}
+
+@media (max-width: 850px) {
+  .header__fixed-menu{
+    flex-direction: column;
+    height: 35px;
+    overflow: hidden;
+  }
+}
+
+.header__fixed-menu_active{
+  height: unset;
+}
+
+.header__fixed-menu_active > .header__li{
+  opacity: 1;
+  visibility: visible;
 }

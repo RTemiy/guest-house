@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Загородный комплекс «ПолянА»"/>
+  <meta property="og:title" content="Загородный комплекс «ПолянА»">
+  <meta property="og:url" content="https://Нужный-юрл">
+  <meta property="og:image" content="<%=require('./images/big_house.jpg')%>">
   <title>
     Загородный комплекс «ПолянА»
   </title>
@@ -14,12 +18,23 @@
         <li class="header__li"><div class="header__li-block"><a href="#about" class="header__link">О нашем комплексе</a></div></li>
         <li class="header__li"><div class="header__li-block"><a href="#weekend" class="header__link">Праздники и корпоративы</a></div></li>
         <li class="header__li"><div class="header__li-block"><a href="#full" class="header__link">Аренда дома</a></div></li>
-        <li class="header__li"><div class="header__li-block"><a href="#rooms" class="header__link">Номерной фонд</a></div></li>
+        <li class="header__li">
+          <div class="header__li-block">
+            <a href="#rooms" class="header__link">Номерной фонд</a>
+            <ul class="header__special-menu">
+              <li class="header__special-menu-item"><a class="header__link" href="#mimoza">«Мимоза»</a></li>
+              <li class="header__special-menu-item"><a class="header__link" href="#myata">«Мята»</a></li>
+              <li class="header__special-menu-item"><a class="header__link" href="#flowers">«Цветочный»</a></li>
+              <li class="header__special-menu-item"><a class="header__link" href="#sunrise">«Рассвет»</a></li>
+            </ul>
+          </div>
+        </li>
         <li class="header__li"><div class="header__li-block"><a href="#seminars" class="header__link">Конференции и семинары</a></div></li>
         <li class="header__li"><div class="header__li-block"><a href="#brazer" class="header__link">Аренда мангальных беседок</a></div></li>
         <li class="header__li"><a href="#location" class="header__link">Где мы находимся</a></li>
       </ul>
     </nav>
+    <button id="header-button" class="header__mobile-button"> = </button>
   </header>
   <main class="content">
     <section class="lead">
@@ -60,28 +75,28 @@
         </li>
       </ul>
     </section>
-    <div class="underlead">
-      <div class="underlead__container">
+    <ul class="underlead">
+      <li class="underlead__container">
         <a class="underlead__text" href="#weekend">
-          Праздники: от 1500 ₽ за 1 человека
+          Праздники: от 1500&nbsp;₽ за 1&nbsp;человека
         </a>
-      </div>
-      <div class="underlead__container">
+      </li>
+      <li class="underlead__container">
         <a class="underlead__text" href="#full">
-          Аренда дома: от 20 000 ₽
+          Аренда дома: от 20&nbsp;000&nbsp;₽
         </a>
-      </div>
-      <div class="underlead__container">
+      </li>
+      <li class="underlead__container">
         <a class="underlead__text" href="#rooms">
-          Аренда номера: от 3000 ₽
+          Аренда номера: от 3000&nbsp;₽
         </a>
-      </div>
-      <div class="underlead__container">
+      </li>
+      <li class="underlead__container">
         <a class="underlead__text" href="#brazer">
-          Аренда беседки: 5000 ₽
+          Аренда беседки: 5000&nbsp;₽
         </a>
-      </div>
-    </div>
+      </li>
+    </ul>
 
     <div id="gallery-about" class="gallery">
       <div  class="gallery__images">
@@ -132,6 +147,7 @@
     </section>
 
     <section class="about-us">
+      <div class="about-us__bg"></div>
       <h2 class="about-us__title">О нашем комплексе</h2>
       <div class="about-us__container">
         <p class="about-us__paragraph">
@@ -312,7 +328,7 @@
       </p>
       </div>
       <div id="gallery-full" class="gallery">
-        <div  class="gallery__images">
+        <div class="gallery__images">
           <img class="gallery__image" src="<%=require('./images/lead/01.jpg')%>">
           <img class="gallery__image" src="<%=require('./images/full/01.jpg')%>">
           <img class="gallery__image" src="<%=require('./images/full/02.jpg')%>">
@@ -404,7 +420,7 @@
          </ul>
          <p class="rooms__header-paragraph">* Беседка в стоимость не входит и сдаётся в аренду с мангалами.</p>
        </div>
-       <article class="room">
+       <article id="myata" class="room">
          <div class="room__header">
            <h2 class="room__header-title">Номер “Мята” с тёплыми полами</h2>
            <div id="gallery-myata" class="gallery">
@@ -475,7 +491,7 @@
 
        </article>
 
-       <article class="room">
+       <article id="mimoza" class="room">
          <div class="room__header">
            <h2 class="room__header-title">Номер «Мимоза» с тёплыми полами</h2>
            <div id="gallery-mimoza" class="gallery">
@@ -549,7 +565,7 @@
 
        </article>
 
-       <article class="room">
+       <article id="flowers" class="room">
          <div class="room__header">
            <h2 class="room__header-title">Номер "Цветочный" с лоджией</h2>
            <div id="gallery-flowers" class="gallery">
@@ -621,7 +637,7 @@
 
        </article>
 
-       <article class="room">
+       <article id="sunrise" class="room">
          <div class="room__header">
            <h2 class="room__header-title">Двухэтажный номер “Рассвет” с кухней и уличной террасой</h2>
            <div id="gallery-sunrise" class="gallery">
@@ -714,7 +730,19 @@
         <p class="seminars__header-text">В "Поляне" можно устроить общие профессиональные собрания, тренинги или семинары. Проведите деловые встречи в удобной обстановке, где ничто не будет отвлекать.</p>
       </div>
       <div id="gallery-seminars" class="gallery">
-        <div class="gallery__images"></div>
+        <div class="gallery__images">
+          <img class="gallery__image" src="<%=require('./images/seminars/01.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/seminars/02.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/seminars/03.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/seminars/04.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/seminars/05.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/seminars/06.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/seminars/07.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/seminars/08.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/seminars/09.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/seminars/10.jpg')%>">
+          <img class="gallery__image" src="<%=require('./images/seminars/11.jpg')%>">
+        </div>
         <button type="button" class="gallery__button_left"></button>
         <button type="button" class="gallery__button_right"></button>
       </div>
@@ -842,16 +870,45 @@
 
     <section id="location" class="location">
       <div class="location__header">
-        <h2 class="location__header-title">Мы находимся в деревне Рыжево в 7&nbsp;километрах от г. Егорьевск</h2>
+        <h2 class="location__header-title">Мы находимся в деревне Рыжево в 6&nbsp;километрах от г. Егорьевск</h2>
       </div>
       <div class="location__main">
         <div class="location__map">
-          <div class="location__map-block"><div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/1/moscow-and-moscow-oblast/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва и Московская область</a><a href="https://yandex.ru/maps/1/moscow-and-moscow-oblast/house/derevnya_ryzhevo_39/Z0AYdwZjQUAGQFtvfXhyeHhkYw==/?from=mapframe&ll=39.113851%2C55.439477&utm_medium=mapframe&utm_source=maps&z=16" style="color:#eee;font-size:12px;position:absolute;top:14px;">Деревня Рыжево, 39 на карте Москвы и Московской области — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?from=mapframe&ll=39.113851%2C55.439477&mode=whatshere&whatshere%5Bpoint%5D=39.113851%2C55.439477&whatshere%5Bzoom%5D=17&z=16" width="560" height="400" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div></div>
+          <div class="location__map-block">
+            <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/1/moscow-and-moscow-oblast/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва и Московская область</a><a href="https://yandex.ru/maps/1/moscow-and-moscow-oblast/house/derevnya_ryzhevo_39/Z0AYdwZjQUAGQFtvfXhyeHhkYw==/?from=mapframe&ll=39.113851%2C55.439477&utm_medium=mapframe&utm_source=maps&z=16" style="color:#eee;font-size:12px;position:absolute;top:14px;">Деревня Рыжево, 39 на карте Москвы и Московской области — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?from=mapframe&ll=39.113851%2C55.439477&mode=whatshere&whatshere%5Bpoint%5D=39.113851%2C55.439477&whatshere%5Bzoom%5D=17&z=16" width="320" height="320" frameborder="0" allowfullscreen="true" style="position:relative;"></iframe></div>
+          </div>
           <div class="location__map-text">
             <p class="location__text">После съезда с Егорьевского шоссе доезжаете до деревни Костылёво. В конце деревни будет поворот направо. Едете по асфальтированной дороге, никуда не сворачиваете. Через минуту въезжаете в д. Рыжево. Мы находимся в её конце справа у самого леса.
             </p>
             <p class="location__text">Д. Рыжево, дом 39. Загородный комплекс «ПолянА»</p>
-            <p class="location__text-bold">Звоните нам: +7-915-095-51-57</p>
+            <ul class="social full__social">
+              <li class="social__li">
+                <a class="social__link">
+                  <img class="social__image" src="<%=require('./images/icons/ig.png')%>">
+                </a>
+              </li>
+              <li class="social__li">
+                <a class="social__link" href="https://t.me/polyanaEgorevsk/9">
+                  <img class="social__image" src="<%=require('./images/icons/tg.png')%>">
+                </a>
+              </li>
+              <li class="social__li">
+                <a class="social__link" href="https://wa.me/+79150955157">
+                  <img class="social__image" src="<%=require('./images/icons/wp.png')%>">
+                </a>
+              </li>
+              <li class="social__li">
+                <a class="social__link" href="viber://chat?number=%2B79150955157">
+                  <img class="social__image" src="<%=require('./images/icons/vb.png')%>">
+                </a>
+              </li>
+              <li class="social__li">
+                <a href="tel:+79150955157">
+                  <p class="social__paragraph">Звоните нам</p>
+                  <p class="social__paragraph">+ 7-915-095-51-57</p>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
           <h2 class="location__additional-title">Что ещё есть в деревне:</h2>

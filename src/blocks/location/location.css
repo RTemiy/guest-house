@@ -1,3 +1,8 @@
 .location{
   font-family: var(--additionalFont);
+  background-color: white;
+  background-image: url("../../images/backgrounds/05.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

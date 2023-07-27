@@ -1,3 +1,21 @@
 .location__map-text{
-  width: 50%;
+  width: 50vw;
+}
+
+.location__map-text> .full__social{
+  margin: 25px 15px;
+  background-color: rgba(128, 128, 128, 0.61);
+  border-radius: 15px;
+}
+
+@media (max-width: 820px) {
+  .location__map-text{
+    width: 80%;
+  }
+}
+
+@media (max-width: 580px) {
+  .location__map-text{
+    width: 90vw;
+  }
 }

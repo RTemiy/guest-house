@@ -1,3 +1,8 @@
 .brazer{
   font-family: var(--additionalFont);
+  background-color: white;
+  background-image: url("../../images/backgrounds/03.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

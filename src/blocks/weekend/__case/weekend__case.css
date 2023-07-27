@@ -5,3 +5,9 @@
   justify-content: flex-start;
   margin: auto;
 }
+
+@media (max-width: 350px) {
+  .weekend__case{
+    flex-direction: column;
+  }
+}

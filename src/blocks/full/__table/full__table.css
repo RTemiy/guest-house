@@ -11,3 +11,13 @@
   border-radius: 0 15px 15px 0 ;
 }
 
+@media (max-width: 670px) {
+  .full__table{
+    margin: 15px;
+    border-radius: 15px;
+  }
+
+  .full__table:last-of-type{
+    border-radius: 15px;
+  }
+}

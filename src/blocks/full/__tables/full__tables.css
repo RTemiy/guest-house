@@ -4,3 +4,9 @@
   justify-content: center;
   margin-bottom: 25px;
 }
+
+@media (max-width: 450px) {
+  .full__tables {
+    flex-direction: column;
+  }
+}

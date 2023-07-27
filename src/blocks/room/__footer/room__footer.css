@@ -5,3 +5,9 @@
   justify-content: space-between;
   background-color: rgba(128, 128, 128, 0.6);
 }
+
+@media (max-width: 470px) {
+  .room__footer{
+    flex-direction: column;
+  }
+}

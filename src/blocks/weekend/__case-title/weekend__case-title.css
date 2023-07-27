@@ -4,3 +4,9 @@
   width: 650px;
   font-size: 150%;
 }
+
+@media (max-width: 1000px) {
+  .weekend__case-title{
+    width: 50vw;
+  }
+}
