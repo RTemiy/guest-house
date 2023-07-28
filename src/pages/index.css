@@ -2,6 +2,7 @@
 @import url(../vendor/fonts/caveat/stylesheet.css);
 @import url(../vendor/fonts/comfortaa/stylesheet.css);
 @import url(../vendor/fonts/tenorsans/stylesheet.css);
+@import url(../vendor/fonts/adlery/stylesheet.css);
 
 
 @import url(../blocks/root/root.css);
@@ -158,6 +159,8 @@
 @import url(../blocks/reveal/reveal.css);
 
 @import url(../blocks/header/__mobile-button/header__mobile-button.css);
+
+@import url(../blocks/list-icon/list-icon.css);
 
 html{
   scroll-behavior: smooth;
