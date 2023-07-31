@@ -11,8 +11,8 @@
 .header__special-menu{background-color:var(--green);border-radius:0 0 15px 15px;color:#fff;left:-20px;margin:0;opacity:0;padding:0;position:absolute;top:30px;transition:all .5s ease-in-out;visibility:hidden;z-index:5}@media (max-width:850px){.header__special-menu{border:1px solid rgba(0,0,0,.21);border-top:0}}
 .header__special-menu-item{color:#fff;list-style:none;margin:0;padding:5px 0 0;width:150px}
 .lead{align-items:center;background-attachment:fixed;background-color:hsla(0,0%,100%,.25);background-image:url(images/c13ac6f3b8116f9e1228.jpg);background-repeat:no-repeat;background-size:cover;display:flex;flex-direction:column;font-family:var(--additionalFont);gap:16px;height:200px;justify-content:flex-end;padding:125px 0 25px;position:relative}.lead>.social{background-color:hsla(0,0%,50%,.6)}
-.lead__title{color:#000;font-size:250%;margin:0;padding:0}
-.lead__undertitle{color:#000;font-size:200%;margin:0;padding:0 0 32px}
+.lead__title{color:#000;font-size:250%;margin:0;padding:0}@media (max-width:550px){.lead__title{font-size:200%}}
+.lead__undertitle{color:#000;font-size:200%;margin:0;padding:0 0 32px}@media (max-width:550px){.lead__undertitle{font-size:150%}}
 .lead__image{background-position:bottom;background-repeat:no-repeat;background-size:cover;left:0;position:absolute;top:0}
 .social{border-radius:15px;display:flex;flex-direction:row;gap:10px;height:50px;margin:0;padding:15px}@media (max-width:700px){.social{font-size:80%}}@media (max-width:400px){.social{font-size:70%;padding:10px}}
 .social__li{align-items:center;display:flex;list-style:none;margin:0;padding:0}
@@ -42,7 +42,7 @@
 .weekend__title{font-size:350%;margin:0 25px;padding:0;text-align:center}
 
 .weekend__case{align-items:flex-start;display:flex;gap:16px;justify-content:flex-start;margin:auto}@media (max-width:350px){.weekend__case{flex-direction:column}}
-.weekend__case-image{border-radius:15px;height:150px;width:150px}
+.weekend__case-image{border-radius:15px;height:150px;width:150px}@media (max-width:550px){.weekend__case-image{margin-left:10px}}
 .weekend__case-title{font-size:150%;margin:0;padding:0;width:650px}@media (max-width:1000px){.weekend__case-title{width:50vw}}
 .weekend__case-list-item{font-family:var(--additionalFont);margin:0;padding:0}
 .weekend__case-text-container{display:flex;flex-direction:column}
