@@ -46,7 +46,7 @@
 .weekend__case-title{font-size:150%;margin:0;padding:0;width:650px}@media (max-width:1000px){.weekend__case-title{width:50vw}}
 .weekend__case-list-item{font-family:var(--additionalFont);margin:0;padding:0}
 .weekend__case-text-container{display:flex;flex-direction:column}
-.weekend__articles{display:grid;gap:32px;padding-top:25px}
+.weekend__articles{display:grid;gap:32px;padding:25px 0}
 .weekend__cost{-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);background-color:rgba(0,0,0,.5);color:#fff;font-family:var(--additionalFont);padding:25px}
 
 
