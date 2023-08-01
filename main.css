@@ -41,12 +41,12 @@
 .weekend__caption{font-family:Comfortaa,sans-serif;margin:auto;padding-top:25px;text-align:center;width:70%}
 .weekend__title{font-size:350%;margin:0 25px;padding:0;text-align:center}
 
-.weekend__case{align-items:flex-start;display:flex;gap:16px;justify-content:flex-start;margin:auto}@media (max-width:350px){.weekend__case{flex-direction:column}}
+.weekend__case{align-items:flex-start;display:flex;gap:16px;justify-content:flex-start;margin:0}@media (max-width:350px){.weekend__case{flex-direction:column}}
 .weekend__case-image{height:100px;width:100px}@media (max-width:550px){.weekend__case-image{margin-left:10px}}
 .weekend__case-title{font-size:150%;margin:0;padding:0;width:650px}@media (max-width:1000px){.weekend__case-title{width:50vw}}
 .weekend__case-list-item{font-family:var(--additionalFont);margin:0;padding:0}
 .weekend__case-text-container{display:flex;flex-direction:column}
-.weekend__articles{display:grid;gap:32px;padding:25px 0}
+.weekend__articles{display:flex;flex-direction:column;gap:32px;padding:25px 0}
 .weekend__cost{-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);background-color:rgba(0,0,0,.5);color:#fff;font-family:var(--additionalFont);padding:25px}
 
 
@@ -108,7 +108,7 @@
 .location__map{align-items:center;background-color:#fff;border-radius:15px;box-shadow:0 0 5px #000;display:flex;flex-direction:row;justify-content:space-evenly;margin:0 25px;width:90%}@media (max-width:850px){.location__map{flex-direction:column}}
 .location__map-block{background-color:#fff;border:1px solid #000;border-radius:15px;margin:25px;overflow:hidden}
 .location__map-text{width:50vw}.location__map-text>.full__social{background-color:hsla(0,0%,50%,.61);border-radius:15px;margin:25px 15px}@media (max-width:820px){.location__map-text{width:80%}}@media (max-width:580px){.location__map-text{width:90vw}}
-.location__text{line-height:20px;margin:0;padding:25px 15px 0 0;text-align:center}
+.location__text{line-height:20px;margin:0;padding:25px 15px 0;text-align:center}
 .location__list{display:grid;gap:10px;grid-template-columns:repeat(2,1fr);margin:40px 0;padding:15px}
 .location__text-bold{-webkit-text-stroke:1px #000;font-size:110%;font-weight:900;margin:25px auto}
 .location__additional-title{font-family:var(--mainFont);font-size:350%;text-align:center}
