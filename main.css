@@ -41,7 +41,7 @@
 .weekend__caption{font-family:Comfortaa,sans-serif;margin:auto;padding-top:25px;text-align:center;width:70%}
 .weekend__title{font-size:350%;margin:0 25px;padding:0;text-align:center}
 
-.weekend__case{align-items:flex-start;display:flex;gap:16px;justify-content:flex-start;margin:0}@media (max-width:350px){.weekend__case{flex-direction:column}}
+.weekend__case{align-items:flex-start;display:flex;gap:16px;justify-content:flex-start;margin:auto}@media (max-width:800px){.weekend__case{margin:25px}}@media (max-width:500px){.weekend__case{margin:0}}@media (max-width:350px){.weekend__case{flex-direction:column}}
 .weekend__case-image{height:100px;width:100px}@media (max-width:550px){.weekend__case-image{margin-left:10px}}
 .weekend__case-title{font-size:150%;margin:0;padding:0;width:650px}@media (max-width:1000px){.weekend__case-title{width:50vw}}
 .weekend__case-list-item{font-family:var(--additionalFont);margin:0;padding:0}
