@@ -81,7 +81,7 @@
 .room__main-span{font-family:var(--mainFont);font-size:150%;font-weight:900}
 .room__main-paragraph{padding:0 55px 0 15px}
 .room__footer_text{-webkit-text-stroke:1px #000;font-size:125%;font-weight:900;margin-left:25px}
-.room__footer{align-items:center;background-color:hsla(0,0%,50%,.6);display:flex;flex-direction:row;justify-content:space-between}@media (max-width:470px){.room__footer{flex-direction:column}}
+.room__footer{align-items:center;background-color:hsla(0,0%,50%,.6);display:flex;flex-direction:row;justify-content:space-between}@media (max-width:500px){.room__footer{flex-direction:column}}
 .seminars{background-attachment:fixed;background-color:#fff;background-image:url(images/c13ac6f3b8116f9e1228.jpg);background-repeat:no-repeat;background-size:cover;font-family:var(--additionalFont)}
 .seminars__header{background-color:#fff}
 .seminars__header-title{font-family:var(--mainFont);font-size:350%;margin:0;padding-top:50px;text-align:center}
@@ -89,7 +89,7 @@
 .seminars__list{display:grid;gap:10px;grid-template-columns:repeat(2,1fr);padding:10px}
 .seminars__list-item{align-items:center;display:flex;margin-bottom:10px}
 .seminars__main{padding:20px}
-.seminars__footer{align-items:center;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);background-color:hsla(0,0%,50%,.9);display:flex;flex-direction:row;justify-content:space-between}@media (max-width:470px){.seminars__footer{flex-direction:column}}
+.seminars__footer{align-items:center;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);background-color:hsla(0,0%,50%,.9);display:flex;flex-direction:row;justify-content:space-between}@media (max-width:530px){.seminars__footer{flex-direction:column}}
 .seminars__footer-text{-webkit-text-stroke:1px #000;font-size:125%;font-weight:900;margin-left:25px}
 .brazer{background-attachment:fixed;background-color:#fff;background-image:url(images/ed3edc8ca9a967a60c61.jpg);background-repeat:no-repeat;background-size:cover;font-family:var(--additionalFont)}
 .brazer__header{background-color:#fff}
